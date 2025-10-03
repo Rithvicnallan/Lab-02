@@ -81,9 +81,13 @@ plastic_data_all %>% head(n = 10)
 
 ```{r Ex1, message = FALSE}
 # Write your code here to answer exercise 1
-
-
-
+library(dbplyr)
+region_counts <- plastic_data_all %>%
+  group_by(region)%>%
+  summarise(num_countries = n())%>%
+  arrange(desc(num_countries))
+region_counts
+slice(region_counts, c(1))
 ```
 
 
