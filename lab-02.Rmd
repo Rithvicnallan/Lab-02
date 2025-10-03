@@ -25,7 +25,7 @@ library(readxl)
 
 
 # Member 1 (pair 1) write code to load File 3 data here:
-
+data3 <- read_tsv("data/UN_country_population.tsv")
 
 
 # Member 3 (pair 2) write code to load File 4 data here:
@@ -48,7 +48,9 @@ library(readxl)
 
 
 # Member 1 (pair 1) write code to join your data to 'plastic_data_all':
-
+plastic_data_all <- data3 %>%
+  select(-name) %>%
+  right_join(plastic_data_all, by = "code")
 
 
 
