@@ -1,6 +1,6 @@
 ---
 title: "Lab 02 - Global plastic waste"
-author: "Team Name: Matt, User2, User3, User4"
+author: "Team Name: Matt, Rithvic, User3, User4"
 date: "`03/10/2025`"
 output: html_document
 ---
